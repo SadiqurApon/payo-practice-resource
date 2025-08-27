@@ -49,9 +49,47 @@
                         <p>Transection</p>
                     </div>
                 </div>
+                <!-- creat add money option  -->
+                <section>
+                    <h1 class="text-2xl font-bold">Add Money</h1>
+                    <div class="">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                    <!-- select option added  -->
+                                     <legend>Select bank</legend>
+                                    <select class="select ">
+                                        <option disabled selected>Select a Bank</option>
+                                        <option>Bkash</option>
+                                        <option>Nagad</option>
+                                        <option>Roket</option>
+                                    </select>
+
+                                    <fieldset class="fieldset">
+                                        <label class="label">Acount Number</label>
+                                        <input type="email" value="25862586" id="acount-number" class="input"
+                                            placeholder="Enter acount number" />
+                                        <label class="label">4 Digit PIN</label>
+                                        <input type="text" value="1234" id="pin" class="input"
+                                            placeholder="Enter PIN number" />
+                                        <div><a class="link link-hover">Forgot password?</a></div>
+                                        <button id="add-money"
+                                            class="btn btn-neutral mt-4 bg-blue-800 rounded-3xl border-none">Add
+                                            Money</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </header>
     </section>
+
+
+
+    <script src="script/addMoney.js"></script>
 </body>
 
 </html>
