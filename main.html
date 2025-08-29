@@ -25,11 +25,11 @@
                 <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
                 <!-- creat boxes  -->
                 <div class="grid grid-cols-3 mt-10 gap-2 p-2">
-                    <div class="box border text-center cursor-pointer p-4 rounded-sm">
+                    <div id="add-money-box" class="box border text-center cursor-pointer p-4 rounded-sm">
                         <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                         <p>Add Money</p>
                     </div>
-                    <div class="box border text-center cursor-pointer p-4 rounded-sm">
+                    <div id="cashout-box" class="box border text-center cursor-pointer p-4 rounded-sm">
                         <img class="w-8 mx-auto" src="assets/send1.png" alt="">
                         <p>Cashout</p>
                     </div>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <!-- creat add money option  -->
-                <section>
+                <section id="add-money-section">
                     <h1 class="text-2xl font-bold">Add Money</h1>
 
                     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -86,7 +86,7 @@
                     </div>
 
                 </section>
-                <section>
+                <section id="cash-out-section">
                     <h1 class="text-3xl font-bold">Cashout</h1>
                     <div class="hero-content flex-col lg:flex-row-reverse">
 
@@ -118,6 +118,7 @@
 
     <script src="script/addMoney.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/hideBlock.js"></script>
 </body>
 
 </html>
