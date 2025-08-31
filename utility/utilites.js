@@ -1,11 +1,7 @@
-function getInputValueById (id){
-    const amount = document.getElementById(id).value;
-    const convertedAmount = parseFloat(amount);
-    return convertedAmount;
+function getInputValueById(id){
+    const value = document.getElementById(id).value;
+    const convertedValue = parseFloat(value);
+    return convertedValue;
 }
 
-function getInnerTextById(id){
-    const amount = document.getElementById(id).innerText;
-    const convertedAmount = parseFloat(amount);
-    return convertedAmount;
-}
+
