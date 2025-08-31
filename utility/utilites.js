@@ -10,6 +10,6 @@ function getInnerTextById(id){
     return convertedValue;
 }
 
-function getInnerTextByIdandValue(id, value){
+function setInnerTextByIdandValue(id, value){
     document.getElementById(id).innerText = value;
 }
