@@ -24,7 +24,8 @@ document.getElementById("add-money")
         if (acount.length === 8) {
             if (pin === 1234) {
                 const sum = mainBalance + amount;
-                document.getElementById("main-balance").innerText = sum;
+                // document.getElementById("main-balance").innerText = sum;
+                getInnerTextByIdandValue("main-balance" , sum);
             } else {
                 console.log("Enter valid PIN");
             }

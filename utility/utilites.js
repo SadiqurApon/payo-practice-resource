@@ -9,3 +9,7 @@ function getInnerTextById(id){
     const convertedValue = parseFloat(value);
     return convertedValue;
 }
+
+function getInnerTextByIdandValue(id, value){
+    document.getElementById(id).innerText = value;
+}
