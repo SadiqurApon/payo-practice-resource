@@ -9,6 +9,17 @@ document.getElementById("add-money")
         const account = getInputValueById("acount-number");
         const amount = getInputValueById("add-amount");
         const pin = getInputValueById("pin");
-        console.log(account,amount, pin);
-        
+        // console.log(account,amount, pin);
+        const mainBalance = getInnerTextById("main-balance");
+        console.log(mainBalance);
+
+        if(account.length === 8){
+            if(pin === 1234){
+                
+            }else{
+                console.log("Enter valid PIN");
+            }
+        }else{
+            console.log("Enter valid Number");
+        }
     })
