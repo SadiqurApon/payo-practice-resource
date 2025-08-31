@@ -6,20 +6,29 @@ document.getElementById("add-money")
 
         // const value = getInputValueById();
         // console.log(value);                  //utilites er hello bro ta ke variable er maddome return korsi
-        const account = getInputValueById("acount-number");
+        
+        // const account = getInputValueById("acount-number");
+        
+        
         const amount = getInputValueById("add-amount");
         const pin = getInputValueById("pin");
+        const acount = document.getElementById("acount-number").value;
+        
         // console.log(account,amount, pin);
+        
         const mainBalance = getInnerTextById("main-balance");
-        console.log(mainBalance);
+        
+        // console.log(mainBalance);
 
-        if(account.length === 8){
-            if(pin === 1234){
-                
-            }else{
+
+        if (acount.length === 8) {
+            if (pin === 1234) {
+                const sum = mainBalance + amount;
+                document.getElementById("main-balance").innerText = sum;
+            } else {
                 console.log("Enter valid PIN");
             }
-        }else{
+        } else {
             console.log("Enter valid Number");
         }
     })
