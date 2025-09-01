@@ -1,20 +1,17 @@
-document.getElementById("cash-out-section").style.display = 'none';
+// document.getElementById("cash-out-section").style.display = "none";
 
 document.getElementById("add-money-box")
     .addEventListener("click", function () {
-        // document.getElementById("add-money-section").style.display = "block";
         // document.getElementById("cash-out-section").style.display = "none";
-        handleToggle("add-money-section", "block");
+        // document.getElementById("add-money-section").style.display = "block";
         handleToggle("cash-out-section", "none");
-
-
-
+        handleToggle("add-money-section", "block");
     })
 
 document.getElementById("cashout-box")
     .addEventListener("click", function () {
-        handleToggle("add-money-section", "none");
         handleToggle("cash-out-section", "block");
+        handleToggle("add-money-section", "none");
     })
 
 
