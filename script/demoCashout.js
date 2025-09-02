@@ -9,7 +9,14 @@ document.getElementById("cashout-money")
         const mainBalance = getInnerTextById("main-balance");
         // console.log(mainBalance);
 
-        if(acount.length === 8){
-            
+        if (acount.length === 8) {
+            if (pin === 1234) {
+                const sum = mainBalance - amount;
+                setInnerTextByIdandValue("main-balance", sum);
+            } else {
+                console.log("Enter valid PIN");
+            }
+        } else {
+            console.log("Enter valid Number");
         }
     })
