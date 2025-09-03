@@ -9,6 +9,15 @@ document.getElementById("cashout-money")
         const mainBalance = getInnerTextById("main-balance");
         // console.log(mainBalance);
 
+        if(amount < 0){
+            alert("Enter valid amount");
+            return;
+        }
+        if(amount > mainBalance){
+            alert("Invalid amount");
+            return;
+        }
+
         if (acount.length === 8) {
             if (pin === 1234) {
                 const sum = mainBalance - amount;
