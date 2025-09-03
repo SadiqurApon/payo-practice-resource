@@ -14,7 +14,13 @@ document.getElementById("add-money")
                 // console.log(sum);
                 // document.getElementById("main-balance").innerText = sum;
                 setInnerTextByIdandValue("main-balance", sum);
-                
+
+                const container = document.getElementById("transaction-section");
+                const p = document.createElement("p");
+                p.innerText = `
+                added ${amount} from ${acount} acount
+                `
+                container.appendChild(p);
             } else {
                 console.log("Enter valid PIN");
             }

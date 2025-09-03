@@ -13,6 +13,13 @@ document.getElementById("cashout-money")
             if (pin === 1234) {
                 const sum = mainBalance - amount;
                 setInnerTextByIdandValue("main-balance", sum);
+
+                const container = document.getElementById("transaction-section");
+                const p = document.createElement("p");
+                p.innerText = `
+                cashout ${amount} from ${acount} acount
+                `
+                container.appendChild(p);
             } else {
                 console.log("Enter valid PIN");
             }

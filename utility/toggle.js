@@ -1,4 +1,6 @@
 document.getElementById("cash-out-section").style.display = "none";
+document.getElementById("transaction-section").style.display = "none";
+
 
 document.getElementById("add-money-box")
     .addEventListener("click", function () {
